@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #a9a9a9;
+            margin: 0px;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+        }   
+        main {
+            background-color: #F4EDEA;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.39);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        nav {
+            background-color: #4e4e4e;
+            margin: 0px;
+            padding: 5px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
+            
+        }
+        /*O "filho" de nav:*/
+        nav > a {
+            margin-right: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+        nav > a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        article{
+            background-color: #7D8491;
+        }
+        /*Configura aside dentro do article*/
+        article > aside{
+                background-color: #4e4e4e;
+        }
+        /*Configura p dentro de aside*/
+        aside > p{
+            color: white;
+        }
+        /*Configurações dos itens dentro da seção assuntos*/
+        #assuntos > ul > li{
+            display: inline-block;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #assuntos > ul > li:hover{
+            font-size: 22px;
+            color: red;
+        }
+        /*Configurando a lista toda dentro da seção assunto*/
+        #assuntos > ul {
+            margin-left: -38px;
+        }
+        div#ball{
+            height: 100px;
+            width: 100px;
+            background-color: rgba(255, 68, 0, 0.993);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <ul>
+                <li>Economia</li>
+                <li>Tecnologia</li>
+                <li>Notícias</li>
+            </ul>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>História fictícia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A odit dolores beatae. Omnis harum earum atque. Commodi perspiciatis dolore in aut, dicta rerum quia quaerat autem modi tenetur repudiandae obcaecati?</p>
+                <aside>
+                    <p>Artigo escrito por fulano da silva</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Vinícius Marinho</p>
+    </footer>
+    <h1>Bola abaixo</h1>
+    <div id="ball"></div>
+</body>
+</html>

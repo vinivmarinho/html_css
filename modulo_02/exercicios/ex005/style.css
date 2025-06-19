@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+    background-color: #E3C75F;
+    font-family: Arial, Verdana, sans-serif;
+}
+h1{
+    color: #16232E;
+}
+h2{
+    color: #164C45;
+}
+/*Seletor referente ao ID:*/
+#main{
+    text-align: center;
+    background-color: #16232E ;
+    color: white;
+}
+/*Seletores referente às classes:*/
+.basico{
+    color: #2a4c16;
+}
+.intermediario{
+    color: #474c16;
+}
+.avancado{
+    color: #4c1616;
+}

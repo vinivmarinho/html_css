@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vm challenge</title>
+</head>
+<body>
+    <h1>Imagem flexível</h1>
+    <p>Aumente e diminua o zoom da sua tela e a imagem irá se adaptar ao tamanho</p>
+    <picture>
+        <source media="(min-width: 1050px )" srcset="image/zoro_1000.jpg">
+        <source media="(min-width: 750px)" srcset="image/zoro_700.jpg">
+        <source media="(min-width: 350px)" srcset="image/zoro_300.jpg">
+        <img src="image/zoro_700.jpg" alt="Imagem do zoro">
+    </picture>
+</body>
+</html>
