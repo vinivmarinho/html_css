@@ -47,6 +47,10 @@ header  p{
     font-size: 1.2em;
     margin: 10px;
 }
+/*configurações do nav*/
+nav{
+    padding: 10px;
+}
 
 /*Settings dos itens do menu*/
 nav > a{
