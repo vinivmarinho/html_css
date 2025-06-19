@@ -50,6 +50,7 @@ header  p{
 /*configurações do nav*/
 nav{
     padding: 5px;
+    display: flex;
 }
 
 /*Settings dos itens do menu*/
