@@ -46,6 +46,7 @@ header  p{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.226);
     font-size: 1.2em;
     margin: 5px;
+    padding-bottom: 15px;
 }
 /*configurações do nav*/
 nav{
