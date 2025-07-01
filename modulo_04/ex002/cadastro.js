@@ -1,1 +1,1 @@
-Erro!! Você não preencheu os campos necessários;
+Você passou para a página de cadastro!
