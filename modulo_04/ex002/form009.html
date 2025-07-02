@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Treinando Formulários</h1>
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <p> <!--Botão de número-->
+            <label for="id_numero">Número:</label>
+            <input type="range" name="numero" id="id_numero" min="0" max="10000000" value="500" oninput="id_valor.innerHTML = Number(id_numero.value)"> <!--Uso o JavaScript no Output-->
+            <!--Output do botão de número-->
+            <output name="valor" id="id_valor"></output>
+
+        </p>
+        <p> <!--Botão de Enviar e Limpar -->
+            <input type="submit" value="Envia">
+            <input type="reset" value="Limpa">
+        </p>
+    </form>
+</body>
+</html>

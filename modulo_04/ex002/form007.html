@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Treinando formulários</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <p> <!--Botão do estado-->
+            <label for="id_estado">Estado:</label>
+            <!--Select cria uma lista com as "options"-->
+            <select name="estado" id="id_estado">
+                <!--O optgroup agrupa as "options". Separa elas em categorias-->
+                <option value="" selected>---Escolha--- </option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+            </select>
+        </p> <!--Botão da profissão-->
+        <p>
+            <label for="id_profissao">Profissão:</label>
+            <input type="text" name="profissao" id="id_profissao" list="lista_profissao">
+            <!--Cria uma lista de sugestões para o campo de entrada-->
+            <datalist id="lista_profissao">
+                <option>Administrador</option>
+                <option>Professor</option>
+                <option>Desenvolvedor</option>
+            </datalist>
+        </p>
+        <p> <!--Botão de Mensagem-->
+            <label for="id_mensagem">Mensagem:</label><br>
+            <textarea name="mensagem" id="id_mensagem" cols="30" rows="10"></textarea>
+
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Treinando formulários</h1>
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <p><!--Botão 01-->
+            <label for="id_numero01">Número 01:</label>
+            <input type="number" name="numero01" id="id_numero01" min="0" max="50" required oninput="id_soma.innerHTML = Number(id_numero01.value) + Number(id_numero02.value)"> <!--Após o "oninput" utilizei JavaScript para somar os números inserido nos campos-->
+        </p>
+        <p><!--Botão 02-->
+            <label for="id_numero02">Número 02:</label>
+            <input type="number" name="numero02" id="id_numero02" min="0" max="50" required oninput="id_soma.innerHTML = Number(id_numero01.value) + Number(id_numero02.value)">
+        </p>
+        <p><!--Botão de soma-->
+            <label for="id_soma">Soma:</label>
+            <output name="soma" id="id_soma"></output>
+        </p>
+        <input type="submit" value="Envia">
+        <input type="reset" value="Limpa">
+
+    </form>
+</body>
+</html>
