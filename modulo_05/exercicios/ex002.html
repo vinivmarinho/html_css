@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: lightcoral;
+            border: 1px solid green;
+
+            display: flex; /* Caixa flexível */
+            flex-flow: row wrap; /* Os itens ficam em linha e quebram (é o shorthand de "flex-direction" e "flex-wrap") */
+        }
+        .item{
+            background-color: lightslategray;
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+            flex: auto; /* Os itens ocupam e preenchem o mesmo espaço dentro do container */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">Vini A</div>
+        <div class="item">Vini B</div>
+        <div class="item">Vini C</div>
+        <div class="item">Vini D</div>
+        <div class="item">Vini E</div>
+        <div class="item">Vini F</div>
+        <div class="item">Vini G</div>
+        <div class="item">Vini H</div>
+        <div class="item">Vini I</div>
+        <div class="item">Vini J</div>
+        <div class="item">Vini K</div>
+    </div>
+</body>
+</html>
