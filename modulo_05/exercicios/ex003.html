@@ -8,16 +8,17 @@
         #container{
             background-color: lightcoral;
             border: 1px solid green;
-
-            display: flex; /* Caixa flexível */
-            flex-flow: row wrap; /* Os itens ficam em linha e quebram (é o shorthand de "flex-direction" e "flex-wrap") */
+            height: 200px;
+            display: flex; 
+            flex-flow: row wrap; 
+            justify-content: space-around;
+            align-items: center;        
         }
         .item{
             background-color: lightslategray;
             border: 2px solid black;
             text-align: center;
             padding: 10px;
-            flex: auto; /* Os itens ocupam e preenchem o mesmo espaço dentro do container */
         }
     </style>
 </head>
