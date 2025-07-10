@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: gray;
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        section{
+            background-color: red;
+            width: 100px;
+            box-shadow: 2px 2px 10px black;
+            border: 3px solid gray;
+        }
+        section#primeiro{
+            flex-basis: 100px;
+            align-self: flex-start;
+        }
+        #segundo{
+            flex-basis: 400px;
+            align-self: flex-start;
+        }
+            
+        
+        #terceiro{
+            flex-basis: 50px;
+            align-self: flex-start;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section id="primeiro">
+            <h1 >Flex Basis</h1>
+        </section>
+        <section id="segundo">
+            <h1 >Flex Basis</h1>
+        </section>
+        <section id="terceiro">
+            <h1 >Flex Basis</h1>
+        </section>
+        
+    </main>
+</body>
+</html>
