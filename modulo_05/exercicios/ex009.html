@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Flex</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: gray;
+
+        }
+        .container{
+            display: flex;
+            background-color: goldenrod;
+            width: 100vw;
+            height: 100vh;
+            flex-flow: row wrap;
+            align-content: flex-start;
+        }
+        .item{
+            background-color: darkred;
+            height: 20vh;
+            margin: 5px;
+        }
+        section#primeiro{
+            flex: 150px 0 1;
+        }
+        section#segundo{
+            flex: 150px 2 0;
+        }
+        section#terceiro{
+            flex: 150px 1 2;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="item" id="primeiro">A</section>
+        <section class="item" id="segundo">B</section>
+        <section class="item" id="terceiro">C</section>
+    </main>
+</body>
+</html>
