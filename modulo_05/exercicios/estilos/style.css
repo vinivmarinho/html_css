@@ -17,10 +17,37 @@ header{
     background-color: gray;
     padding: 10px;
     margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 header h1{
     color: white;
+    flex: 0 0 200px;
+    border: 1px solid black;
+    
 }
+header a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+header a:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    flex: auto;
+}
+
 /* MAIN */
 main{
     background-color: white;
