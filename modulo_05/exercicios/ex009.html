@@ -19,24 +19,25 @@
         .container{
             display: flex;
             background-color: goldenrod;
-            width: 100vw;
+            width: 80vw;
             height: 100vh;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
             align-content: flex-start;
         }
         .item{
             background-color: darkred;
             height: 20vh;
+            width: 100px;
             margin: 5px;
         }
         section#primeiro{
-            flex: 150px 0 1;
+            flex: initial;
         }
         section#segundo{
-            flex: 150px 2 0;
+            flex: none;
         }
         section#terceiro{
-            flex: 150px 1 2;
+            flex: auto;
         }
     </style>
 </head>
