@@ -17,6 +17,7 @@ header{
     background-color: gray;
     padding: 10px;
     margin-bottom: 10px;
+    width: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -65,3 +66,5 @@ main p{
     line-height: 1.5em;
     font-size: 1.2em;
 }
+
+/* Media queries */
